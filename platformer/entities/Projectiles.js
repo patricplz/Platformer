@@ -15,7 +15,7 @@ export class Projectiles {
               anchor("center"),
               pos(position),
               scale(4),
-              rotate(type === "fish" ? 90 : 0), //si es un pez se rota si no nada
+              rotate(type === "fish" ? 90 : 0), 
               state("launch", ["launch", "fall"]),
               offscreen(),
               type,
