@@ -64,8 +64,7 @@ const scenes = {
         player.update()
 
         const spiders = new Spiders(
-            level1Config.spiderPositions.map(spiderPos => spiderPos()), //map se usa para recorrer cada elemento de un array y aplicar una función sobre él.
-            //tambien se podria hacer level1Config.spiderPositions.forEach(spiderPos => spiderPos());
+            level1Config.spiderPositions.map(spiderPos => spiderPos()),
             level1Config.spiderRanges,
             level1Config.spiderDurations,
             level1Config.spiderType
@@ -121,8 +120,7 @@ const scenes = {
         player.update()
 
         const spiders = new Spiders(
-            level2Config.spiderPositions.map(spiderPos => spiderPos()), //map se usa para recorrer cada elemento de un array y aplicar una función sobre él.
-            //tambien se podria hacer level1Config.spiderPositions.forEach(spiderPos => spiderPos());
+            level2Config.spiderPositions.map(spiderPos => spiderPos()), 
             level2Config.spiderRanges,
             level2Config.spiderDurations,
             level2Config.spiderType
