@@ -113,11 +113,11 @@ export class Player {
   }
 
   enableMobVulnerability() {
-    function hitAndRespawn(context) { //al ser una funcion dentro de una funcion, pierde el this del player (creo)
+    function hitAndRespawn(context) {
       play("hit", { speed: 1.5 }) 
       context.respawnPlayer()
     }
-    this.gameObj.onCollide("spiders", () => hitAndRespawn(this)) //onCollide ejecuta el callback en un contexto diferente. Si no pasas explícitamente la instancia actual, la función no sabrá a qué objeto pertenece el método respawnPlayer.
+    this.gameObj.onCollide("spiders", () => hitAndRespawn(this)) 
     this.gameObj.onCollide("flame", () => hitAndRespawn(this))
     this.gameObj.onCollide("fish", () => hitAndRespawn(this))
     this.gameObj.onCollide("axes", () => hitAndRespawn(this))
