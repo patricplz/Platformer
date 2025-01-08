@@ -37,7 +37,7 @@ export class Spiders {
       }
 
     setMovementPattern() {
-        for (const [index, spider] of this.spiders.entries()) { // this.spiders.entries es como enumerate(this.spiders) en python que te da el index tambien, osea itero cada araña para acceder a cada una de ellas
+        for (const [index, spider] of this.spiders.entries()) {
             const idle = spider.onStateEnter("idle", async(previousState) => {
                 if (spider.curAnim() !== "idle") spider.play("idle")
 
