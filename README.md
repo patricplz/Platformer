@@ -1,2 +1,2 @@
 # Platformer
-Mario-style game
+Mario-style game made with Kaboom.js
